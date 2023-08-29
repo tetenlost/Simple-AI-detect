@@ -4,6 +4,7 @@
 
  ## 程式分類
  ### 物件分類器應用
+ [常見CNN分類模型](https://github.com/tetenlost/Simple-AI-detect/blob/main/Classification/%E5%B8%B8%E8%A6%8BCNN%E5%88%86%E9%A1%9E%E6%A8%A1%E5%9E%8B.ipynb)  
 [resnet18訓練](https://github.com/tetenlost/Simple-AI-detect/blob/main/Classification/resnet18_%E8%A8%93%E7%B7%B4.ipynb)  
 [resnet18訓練（不平衡資料集）](https://github.com/tetenlost/Simple-AI-detect/blob/main/Classification/resnet18_%E8%A8%93%E7%B7%B4for%E4%B8%8D%E5%B9%B3%E8%A1%A1%E8%A8%93%E7%B7%B4%E8%B3%87%E6%96%99%E9%9B%86.ipynb)  
 [grabcam可視化](https://github.com/tetenlost/Simple-AI-detect/blob/main/Classification/gradcam%E5%81%B5%E6%B8%AC%E7%B5%90%E6%9E%9C%E5%8F%AF%E8%A6%96%E5%8C%96.ipynb)  
