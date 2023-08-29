@@ -15,19 +15,10 @@
 [AE自編解碼器](https://github.com/tetenlost/Simple-AI-detect/blob/main/AutoEncoder%E7%95%B0%E5%B8%B8%E6%AA%A2%E6%B8%AC%EF%BC%88%E9%9B%BB%E6%99%B6%E9%AB%94%E5%BD%B1%E5%83%8F%EF%BC%89.ipynb)  
 [PADIM](https://github.com/tetenlost/Simple-AI-detect/blob/main/PADIM%E7%95%B0%E5%B8%B8%E6%AA%A2%E6%B8%AC_%EF%BC%88%E4%BD%BF%E7%94%A8%E9%9B%BB%E6%99%B6%E9%AB%94%E5%BD%B1%E5%83%8F%EF%BC%89.ipynb)  
 [FastFlow](https://github.com/tetenlost/Simple-AI-detect/blob/main/fastflow%E7%95%B0%E5%B8%B8%E6%AA%A2%E6%B8%AC%EF%BC%88%E4%BD%BF%E7%94%A8%E9%9B%BB%E6%99%B6%E9%AB%94%E5%BD%B1%E5%83%8F%EF%BC%89.ipynb)  
-##  colab 使用方法
-
-colab網站:https://colab.research.google.com/
-
-進入colab後，點選"github"，在網址上輸入"https://github.com/tetenlost/Simple-AI-detect/"
-![image](https://user-images.githubusercontent.com/38835841/215302651-df0edfde-71c0-4538-ab3f-4b2116195c0c.png)
-選擇相關".ipynb"檔點選並打開，點擊播放鍵可執行該段落之程式
-![image](https://user-images.githubusercontent.com/38835841/215302738-a8bed53b-42d7-41bf-81e1-9c3b52219f12.png)
-## colab 切換GPU方法
-點擊"編輯"->"筆記本設定"
-
-![image](https://user-images.githubusercontent.com/38835841/215302785-d332a0b1-8b41-48b7-a922-fbc66982da55.png)
-
-點擊 "GPU"->儲存 (有時GOOGLE GPU 資源吃緊，可能無法使用，這時就選擇"NONE"，或是跳過此步驟即可)
-
-![image](https://user-images.githubusercontent.com/38835841/215302823-8331a834-0b5e-49b2-b60a-149b9d6d8342.png)
+### YOLOV8_ultralytics套件庫使用
+- [x] [yolov8分類器](https://github.com/tetenlost/Simple-AI-detect/blob/main/YOLOv8%E7%89%A9%E4%BB%B6%E5%88%86%E9%A1%9E%E5%99%A8.ipynb)  
+- [ ] yolov8物件偵測  
+- [ ] yolov8姿態偵測  
+- [ ] yolov8語義分割
+### colab使用方法
+[使用方法](https://github.com/tetenlost/Simple-AI-detect/blob/main/colab.md)
