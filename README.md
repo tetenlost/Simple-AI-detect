@@ -18,7 +18,7 @@
 [FastFlow](https://github.com/tetenlost/Simple-AI-detect/blob/main/AnomalyDetection/fastflow%E7%95%B0%E5%B8%B8%E6%AA%A2%E6%B8%AC%EF%BC%88%E4%BD%BF%E7%94%A8%E9%9B%BB%E6%99%B6%E9%AB%94%E5%BD%B1%E5%83%8F%EF%BC%89.ipynb)  
 ### YOLOV8_ultralytics套件庫使用
 - [x] [yolov8分類器](https://github.com/tetenlost/Simple-AI-detect/blob/main/YOLOV8/YOLOv8%E7%89%A9%E4%BB%B6%E5%88%86%E9%A1%9E%E5%99%A8.ipynb)  
-- [ ] yolov8物件偵測  
+- [x] [yolov8物件偵測 ](https://github.com/tetenlost/Simple-AI-detect/blob/main/YOLOV8/YOLOv8%E7%89%A9%E4%BB%B6%E5%81%B5%E6%B8%AC%E5%99%A8.ipynb) 
 - [ ] yolov8姿態偵測  
 - [ ] yolov8語義分割
 ### colab使用方法
