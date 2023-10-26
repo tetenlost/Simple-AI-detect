@@ -20,7 +20,8 @@
 [yolov8分類器](https://github.com/tetenlost/Simple-AI-detect/blob/main/YOLOV8/YOLOv8%E7%89%A9%E4%BB%B6%E5%88%86%E9%A1%9E%E5%99%A8.ipynb)  
 [yolov8物件偵測 ](https://github.com/tetenlost/Simple-AI-detect/blob/main/YOLOV8/YOLOv8%E7%89%A9%E4%BB%B6%E5%81%B5%E6%B8%AC%E5%99%A8.ipynb)
  * 以下兩種模型本人無實際訓練過，只有使用他的推論功能，因此不是很清楚訓練時的技巧與評分方式
-[yolov8姿態偵測 ](https://github.com/tetenlost/Simple-AI-detect/blob/main/YOLOV8/YOLOV8%E5%A7%BF%E6%85%8B%E5%81%B5%E6%B8%AC.ipynb) 
+  
+[yolov8姿態偵測 ](https://github.com/tetenlost/Simple-AI-detect/blob/main/YOLOV8/YOLOV8%E5%A7%BF%E6%85%8B%E5%81%B5%E6%B8%AC.ipynb)   
 [yolov8語義分割](https://github.com/tetenlost/Simple-AI-detect/blob/main/YOLOV8/YoloV8%E8%AA%9E%E7%BE%A9%E5%88%86%E5%89%B2.ipynb)
 ### colab使用方法
 [使用方法](https://github.com/tetenlost/Simple-AI-detect/blob/main/colab.md)
