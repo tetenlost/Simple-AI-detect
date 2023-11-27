@@ -23,5 +23,8 @@
   
 [yolov8姿態偵測 ](https://github.com/tetenlost/Simple-AI-detect/blob/main/YOLOV8/YOLOV8%E5%A7%BF%E6%85%8B%E5%81%B5%E6%B8%AC.ipynb)   
 [yolov8語義分割](https://github.com/tetenlost/Simple-AI-detect/blob/main/YOLOV8/YoloV8%E8%AA%9E%E7%BE%A9%E5%88%86%E5%89%B2.ipynb)
+### BLIP 圖像描述、問答與文字匹配
+[BLIP demo](https://colab.research.google.com/github/salesforce/BLIP/blob/main/demo.ipynb)
+[BLIP github](https://github.com/salesforce/BLIP)
 ### colab使用方法
 [使用方法](https://github.com/tetenlost/Simple-AI-detect/blob/main/colab.md)
