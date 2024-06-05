@@ -26,5 +26,11 @@
 ### BLIP 圖像描述、問答與文字匹配
 [BLIP demo](https://colab.research.google.com/github/salesforce/BLIP/blob/main/demo.ipynb)  
 [BLIP github](https://github.com/salesforce/BLIP)
+
+### 物件追蹤
+[點追蹤](https://github.com/tetenlost/Simple-AI-detect/blob/main/Multiple_Object_Tracking/Tracking_%E5%A4%9A%E7%9B%AE%E6%A8%99%E9%BB%9E%E8%BF%BD%E8%B9%A4.ipynb)
+[Sort](https://github.com/tetenlost/Simple-AI-detect/blob/main/Multiple_Object_Tracking/Tracking_Sort%E5%A4%9A%E7%9B%AE%E6%A8%99%E8%BF%BD%E8%B9%A4.ipynb)
+[DeepSort]()
+
 ### colab使用方法
 [使用方法](https://github.com/tetenlost/Simple-AI-detect/blob/main/colab.md)
