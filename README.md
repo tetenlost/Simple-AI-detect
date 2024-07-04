@@ -30,7 +30,7 @@
 ### 物件追蹤
 [點追蹤](https://github.com/tetenlost/Simple-AI-detect/blob/main/Multiple_Object_Tracking/Tracking_%E5%A4%9A%E7%9B%AE%E6%A8%99%E9%BB%9E%E8%BF%BD%E8%B9%A4.ipynb)  
 [Sort](https://github.com/tetenlost/Simple-AI-detect/blob/main/Multiple_Object_Tracking/Tracking_Sort%E5%A4%9A%E7%9B%AE%E6%A8%99%E8%BF%BD%E8%B9%A4.ipynb)  
-[DeepSort]()  
+[DeepSort](https://github.com/tetenlost/Simple-AI-detect/blob/main/Multiple_Object_Tracking/Tracking_DeepSORT%E7%89%A9%E4%BB%B6%E8%BF%BD%E8%B9%A4.ipynb)  
 
 ### colab使用方法
 [使用方法](https://github.com/tetenlost/Simple-AI-detect/blob/main/colab.md)
