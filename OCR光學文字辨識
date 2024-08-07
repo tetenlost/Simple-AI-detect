@@ -1,0 +1,176 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# 光學文字辨識\n",
+        "\n",
+        "## 下載示範圖片"
+      ],
+      "metadata": {
+        "id": "PKwcFFDJXuHh"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!wget https://wumanzoo.com/wp-content/uploads/2023/10/%E8%BE%B0%E5%AE%87%E8%90%BD%E9%9B%81%E9%AB%94@1.5x-50-1024x341.jpg"
+      ],
+      "metadata": {
+        "id": "MEME_kHQbi1i"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## EasyOCR\n",
+        "\n",
+        "速度較慢，魯棒性好"
+      ],
+      "metadata": {
+        "id": "AwBzoEy8bmD9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip3 install easyocr"
+      ],
+      "metadata": {
+        "id": "-NF_P2dw1faJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import easyocr\n",
+        "reader = easyocr.Reader(['ch_tra','en']) # this needs to run only once to load the model into memory\n",
+        "result = reader.readtext('/content/辰宇落雁體@1.5x-50-1024x341.jpg')\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yGpm-gDl2YUr",
+        "outputId": "ff94fbbb-897f-408a-b21c-4e3a45b04359"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "WARNING:easyocr.easyocr:Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[([[146, 49], [875, 49], [875, 140], [146, 140]],\n",
+              "  't\"道戎魯可免6}志記',\n",
+              "  0.00021493765026855727),\n",
+              " ([[211, 147], [810, 147], [810, 226], [211, 226]],\n",
+              "  '2布望+a遠箇曾去',\n",
+              "  0.0016541348203436856),\n",
+              " ([[223, 277], [411, 277], [411, 313], [223, 313]],\n",
+              "  '那我懂你意思了',\n",
+              "  0.9746705990643261),\n",
+              " ([[432, 278], [642, 278], [642, 310], [432, 310]],\n",
+              "  '(我打工的咖啡廳)',\n",
+              "  0.7872202911979848),\n",
+              " ([[663, 277], [801, 277], [801, 313], [663, 313]],\n",
+              "  '辰宇落雁體',\n",
+              "  0.9877814263883424)]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Tesseract OCR\n",
+        "\n",
+        "此ocr需要先安裝Tesseract核心  \n",
+        "再安裝pytesseract，才能透過python調用Tesseract進行ocr\n",
+        "* 字太小,亮度不均,文字歪斜都會讓Tesseract效果降低，需要先進行預處理"
+      ],
+      "metadata": {
+        "id": "b8e5gjsoY2d6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!sudo apt install tesseract-ocr\n",
+        "!sudo apt install tesseract-ocr-chi-tra\n",
+        "!pip install pytesseract"
+      ],
+      "metadata": {
+        "id": "JW9WZZksY4-7"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pytesseract\n",
+        "from PIL import Image, ImageFilter\n",
+        "import os\n",
+        "import numpy as np\n",
+        "from scipy import fftpack\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "os.environ['TESSDATA_PREFIX'] = '/usr/share/tesseract-ocr/4.00/tessdata/'\n",
+        "img = Image.open('/content/辰宇落雁體@1.5x-50-1024x341.jpg')\n",
+        "result = pytesseract.image_to_string(img,lang='chi_tra')\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "s_jD5iYRaZgn",
+        "outputId": "4abd5ea0-d0d1-44aa-c8f9-cbe67e229124"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "我紀這防偽不可用多@7殼\n",
+            "吧莽雇   和拆租小謂    耿不卻友未\n",
+            "\n",
+            "那我懂你意思了 | (〈秒\n",
+            "你意志   〈我打工的咖啡鶉\n",
+            "\f\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
