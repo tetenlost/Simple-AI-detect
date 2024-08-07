@@ -32,5 +32,8 @@
 [Sort](https://github.com/tetenlost/Simple-AI-detect/blob/main/Multiple_Object_Tracking/Tracking_Sort%E5%A4%9A%E7%9B%AE%E6%A8%99%E8%BF%BD%E8%B9%A4.ipynb)  
 [DeepSort](https://github.com/tetenlost/Simple-AI-detect/blob/main/Multiple_Object_Tracking/Tracking_DeepSORT%E7%89%A9%E4%BB%B6%E8%BF%BD%E8%B9%A4.ipynb)  
 
+### OCR
+[EASYOCR + Tesseract](https://github.com/tetenlost/Simple-AI-detect/blob/main/OCR/%E5%85%89%E5%AD%B8%E6%96%87%E5%AD%97%E8%BE%A8%E8%AD%98.ipynb)
+
 ### colab使用方法
 [使用方法](https://github.com/tetenlost/Simple-AI-detect/blob/main/colab.md)
